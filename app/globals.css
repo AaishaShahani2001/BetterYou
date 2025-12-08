@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+
+  /*THEME VARIABLEs */
+:root {
+  --primary: #79B4A9;
+  --accent: #5E8BFF;
+  --bg: #E8F6F3;
+  --dark: #2E3A45;
+  --soft: #6B7A86;
+  --white: #FFFFFF;
+}
+
+/* GLOBAL STYLES */
+body {
+  background-color: var(--bg);
+  color: var(--dark);
+  font-family: sans-serif;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+/* CUSTOM UTILITY CLASSES
+   (To match Tailwind naming) */
+@layer utilities {
+  .text-primary { color: var(--primary); }
+  .bg-primary { background-color: var(--primary); }
+
+  .text-accent { color: var(--accent); }
+  .bg-accent { background-color: var(--accent); }
+
+  .text-dark { color: var(--dark); }
+  .bg-dark { background-color: var(--dark); }
+
+  .text-soft { color: var(--soft); }
+  .bg-soft { background-color: var(--soft); }
+
+  .text-bg { color: var(--bg); }
+  .bg-bg { background-color: var(--bg); }
+}
