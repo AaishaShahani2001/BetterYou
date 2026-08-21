@@ -63,6 +63,7 @@ export default function BookAppointment() {
     "1:00 PM",
     "2:00 PM",
     "3:00 PM",
+    "4.00 PM"
   ];
 
   // Handle input
